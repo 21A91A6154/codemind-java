@@ -6,17 +6,21 @@ class pattern13
          Scanner sc=new Scanner(System.in);
          int n,i,j,k=0,m=0;
          n=sc.nextInt();
-         m=n+1;
+         m=1;
          for(i=1;i<=n;i++)
          {
             for(j=1;j<=n;j++)
             {
-                if(j<=m-1)
+                if(j==m)
                 {
-                    System.out.print(j);
+                    System.out.print("0");
+                }
+                else
+                {
+                    System.out.print("x");
                 }
             }
-            m=m-1;
+            m=m+1;
             System.out.println();
          }
    }
