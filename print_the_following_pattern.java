@@ -1,27 +1,21 @@
 import java.util.Scanner;
-class pattern13
+class pattern3
 {
    public static void main(String args[])
    {
          Scanner sc=new Scanner(System.in);
-         int n,i,j,k=0,m=0;
+         int n,i,j,k=0;
          n=sc.nextInt();
-         m=1;
+         k=n;
          for(i=1;i<=n;i++)
          {
-            for(j=1;j<=n;j++)
-            {
-                if(j==m)
-                {
-                    System.out.print("0");
-                }
-                else
-                {
-                    System.out.print("x");
-                }
-            }
-            m=m+1;
-            System.out.println();
+              for(j=1;j<=n;j++)
+              {
+                     System.out.print(k+" ");
+                     k-=1;
+              }
+              k=n;
+              System.out.println();
          }
    }
 }
