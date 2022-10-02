@@ -4,20 +4,15 @@ class pattern
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,i,j;
+        char c;
+        int n,i,j,k=1;
         n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        for(c=65;k<=n;c++)
         {
-            for(j=1;j<=n;j++)
+            k+=1;
+            for(j=0;j<n;j++)
             {
-                if(j==1||j==i||j==n)
-                {
-                    System.out.print("* ");
-                }
-                else
-                {
-                    System.out.print("  ");
-                }
+                System.out.print((char)c+" ");
             }
             System.out.println();
         }
