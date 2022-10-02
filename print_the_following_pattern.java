@@ -4,15 +4,13 @@ class pattern
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        char c;
-        int n,i,j,k=1;
+        int n,i,j;
         n=sc.nextInt();
-        for(c=65;k<=n;c++)
+        for(i=1;i<=n;i++)
         {
-            k+=1;
-            for(j=0;j<n;j++)
+            for(j=1;j<=i;j++)
             {
-                System.out.print((char)c+" ");
+                System.out.print(j);
             }
             System.out.println();
         }
