@@ -1,22 +1,23 @@
 import java.util.Scanner;
-class pattern
+class Demo
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,i,j,k,l;
+        int i,j,n;
         n=sc.nextInt();
-        k=65+n-1;
-        l=n;
         for(i=1;i<=n;i++)
         {
-            for(j=1;j<=l;j++)
+            for(j=1;j<=n-2;j++)
             {
-                System.out.print((char)k+" ");
+               System.out.print(j);
             }
-            l--;
-            k--;
+            for(j=1;j<=n-3;j++)
+            {
+              System.out.print(j);
+            }
             System.out.println();
         }
+        sc.close();
     }
 }
